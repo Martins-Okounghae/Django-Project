@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% load staticfiles %}
+    <!-- banner start -->
+			<!-- ================ -->
+			<div class="banner">
+				<div class="fixed-image" style="background-image:url({% static 'pages/images/Banner18.jpg' %});"></div>
+			</div>
+			<!-- banner end -->
+
+			<!-- page-intro start-->
+			<!-- ================ -->
+			<div class="page-intro">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<ol class="breadcrumb">
+								<li><i class="fa fa-home pr-10"></i><a href="{% url 'index' %}">Home</a></li>
+								<li class="active">Website Design And Development</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- page-intro end -->
+
+			<!-- main-container start -->
+			<!-- ================ -->
+			<section class="main-container">
+
+				<div class="container">
+					<div class="row">
+
+						<!-- main start -->
+						<!-- ================ -->
+						<div class="main col-md-12">
+
+							<!-- page-title start -->
+							<!-- ================ -->
+							<h2 class="page-title margin-top-clear text-center" style="text-align: center; color: #0094ff" >Web Design And Development</h2>
+							<!-- page-title end -->
+							<div class="row">
+								<div class="col-md-12">
+
+									<div class="separator"></div>
+
+									<h3> </h3>
+									<p>We provide interactive and responsive web design, development and custom solutions for any business or industry. Feel free to contact us and let us discuss your project. We take great pride in our work, we provide our customers with the professional services that they need to take full advantage of their online potentials.</p>
+
+									 <ul class="list-unstyled margin-bottom-20">
+											<li><i class="fa fa-check" style="text-align: center; color: #0094ff" ></i>Custom Designs based on your requirements</li>
+											<li><i class="fa fa-check" style="text-align: center; color: #0094ff" ></i>Business Web Applications</li>
+											<li><i class="fa fa-check" style="text-align: center; color: #0094ff" ></i>Social Websites</li>
+											<li><i class="fa fa-check" style="text-align: center; color: #0094ff" ></i> Hotels,Bed & Breakfast, Real Estate, Attorney, Medical, Church Websites</li>
+											<li><i class="fa fa-check" style="text-align: center; color: #0094ff" ></i>Industrial, Oil & Gas Website and much much more</li>
+                                     </ul>
+
+
+
+								</div>
+
+							</div>
+							<hr>
+
+						</div>
+						<!-- main end -->
+
+					</div>
+				</div>
+			</section>
+			<!-- main-container end -->
+
+{% endblock %}

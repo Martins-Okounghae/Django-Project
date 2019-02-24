@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {% load staticfiles %}
+
+
+
+
+<!-- banner start -->
+			<!-- ================ -->
+			<div class="banner dark-translucent-bg" style="background-image:url({% static 'pages/imagesP/Sortware_Dev_Pic_3.jpg' %}); background-position: 50% 50%;">
+				<!-- breadcrumb start -->
+				<!-- ================ -->
+				<div class="breadcrumb-container">
+					<div class="container">
+						<ol class="breadcrumb">
+							<li><i class="fa fa-home pr-10"></i><a class="link-dark" href="{% url 'index' %}">Home</a></li>
+							<li class="active">Website Development</li>
+						</ol>
+					</div>
+				</div>
+				<!-- breadcrumb end -->
+
+
+                <div class="container">
+					<div class="row">
+						<div class="col-md-8 text-center col-md-offset-2 pv-20">
+							<h2 class="title object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100"></h2>
+
+							<p class="text-center object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- banner end -->
+
+                <!-- main-container start -->
+			<!-- ================ -->
+			<section class="main-container">
+
+				<div class="container">
+					<div class="row">
+
+						<!-- main start -->
+						<!-- ================ -->
+						<div class="main col-md-12">
+
+							<!-- page-title start -->
+							<!-- ================ -->
+							<h2 class="page-title margin-top-clear text-center" style="text-align: center; color: black" > Website Design And Development </h2>
+							<!-- page-title end -->
+							<div class="row">
+								<div class="col-md-12" style="font-size: medium; font-weight: 500">
+
+									<div class="separator"></div>
+
+
+									<p>We provide interactive and responsive web design, development and custom solutions for any business or industry. Feel free to contact us and let us discuss your project. We take great pride in our work, we provide our customers with the professional services that they need to take full advantage of their online potentials.</p>
+
+									 <ul class="list-unstyled margin-bottom-20">
+											<li><i class="fa fa-check" style="text-align: center; color: #0094ff" ></i>Custom Designs based on your requirements</li>
+											<li><i class="fa fa-check" style="text-align: center; color: #0094ff" ></i>Business Web Applications</li>
+											<li><i class="fa fa-check" style="text-align: center; color: #0094ff" ></i>Social Websites</li>
+											<li><i class="fa fa-check" style="text-align: center; color: #0094ff" ></i>Hotels, Bed & Breakfast, Real Estate, Attorney, Medical, Church Websites</li>
+											<li><i class="fa fa-check" style="text-align: center; color: #0094ff" ></i>Industrial, Oil & Gas Website and much much more</li>
+                                     </ul>
+
+
+
+								</div>
+
+							</div>
+							<hr>
+
+						</div>
+						<!-- main end -->
+
+					</div>
+				</div>
+			</section>
+			<!-- main-container end -->
+
+
+
+{% endblock %}

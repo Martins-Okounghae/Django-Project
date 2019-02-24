@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        {% load staticfiles %}
+    <!-- banner start -->
+			<!-- ================ -->
+			<div class="banner clearfix">
+
+
+
+				<!-- slideshow start -->
+				<!-- ================ -->
+				<div class="slideshow">
+
+					<!-- slider revolution start -->
+					<!-- ================ -->
+					<div class="slider-banner-container">
+						<div class="slider-banner-fullwidth">
+							<ul class="slides">
+								<!-- slide 1 start -->
+								<!-- ================ -->
+								<li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="First Stack Solutions">
+
+								<!-- main image -->
+								<img src=" {% static 'pages/imagesP/Banner1-1920x650.jpg' %}" alt="slidebg1" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">
+
+								<!-- Transparent Background -->
+								<div class="tp-caption"
+									data-x="center"
+									data-y="bottom"
+									data-speed="600"
+									data-start="0">
+								</div>
+
+								<!-- LAYER NR. 1 -->
+								<div class="tp-caption sfb fadeout text-center large_white"
+									data-x="center"
+									data-y="50"
+									data-speed="500"
+									data-start="1000"
+									data-easing="easeOutQuad">
+								</div>
+
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption sfb fadeout text-center  large_bg_black large_white tp-resizeme hidden-xs"
+									data-x="center"
+									data-y="150"
+									data-speed="500"
+									data-start="1300"
+									data-easing="easeOutQuad">Cyber Security Services
+								</div>
+
+								<!-- LAYER NR. 3 -->
+								<div class="tp-caption sfb fadeout medium_white text-center hidden-xs"
+									data-x="center"
+									data-y="190"
+									data-speed="500"
+									data-start="1300"
+									data-easing="easeOutQuad"
+									data-endspeed="600"> <span class="icon default-bg circle small hidden-xs"><i class="icon-check"></i></span> Bootstrap Based
+								</div>
+
+								<!-- LAYER NR. 4 -->
+								<div class="tp-caption sfb fadeout small_white text-center"
+									data-x="center"
+									data-y="300"
+									data-speed="500"
+									data-start="1600"
+									data-easing="easeOutQuad"
+									data-endspeed="600">
+								</div>
+
+								</li>
+								<!-- slide 1 end -->
+
+								<!-- slide 2 start -->
+								<!-- ================ -->
+								<li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="First Stack Solutions">
+
+								<!-- main image -->
+								<img src="{% static 'pages/imagesP/Banner3-1920x650.jpg'%}" alt="slidebg2" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">
+
+								<!-- Transparent Background -->
+								<div class="tp-caption "
+									data-x="center"
+									data-y="bottom"
+									data-speed="600"
+									data-start="0">
+								</div>
+
+								<!-- LAYER NR. 1 -->
+								<div class="tp-caption sfb fadeout text-center large_dark"
+									data-x="center"
+									data-y="50"
+									data-speed="500"
+									data-start="1000"
+									data-easing="easeOutQuad">
+								</div>
+
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption sfb fadeout text-center large_dark tp-resizeme hidden-xs"
+									data-x="center"
+									data-y="150"
+									data-speed="500"
+									data-start="1300"
+									data-easing="easeOutQuad">
+								</div>
+
+								<!-- LAYER NR. 3 -->
+								<div class="tp-caption sfb fadeout medium_dark text-center hidden-xs"
+									data-x="center"
+									data-y="190"
+									data-speed="500"
+									data-start="1300"
+									data-easing="easeOutQuad"
+									data-endspeed="600">
+								</div>
+
+								<!-- LAYER NR. 4 -->
+								<div class="tp-caption sfb fadeout small_dark text-center"
+									data-x="center"
+									data-y="300"
+									data-speed="500"
+									data-start="1600"
+									data-easing="easeOutQuad"
+									data-endspeed="600">
+								</div>
+
+								</li>
+								<!-- slide 2 end -->
+							</ul>
+							<div class="tp-bannertimer"></div>
+						</div>
+					</div>
+					<!-- slider revolution end -->
+
+				</div>
+				<!-- slideshow end -->
+
+
+
+			</div>
+			<!-- banner end -->
+
+
+			<!-- section start -->
+			<!-- ================ -->
+			<section class="light-gray-bg pv-30 padding-bottom-clear clearfix">
+				<div class="container">
+					<h3 class="logo-font text-center text-muted"><span class="text-default">First Stack Solutions</span></h3>
+
+					<br>
+					<div class="row">
+						<div class="col-md-4 ">
+							<div class="pv-20 ph-20 feature-box-2 boxed shadow object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+								<span class="icon without-bg"><i class="fa fa-diamond"></i></span>
+								<div class="body">
+									<h5 class="title">Cyber Security Services</h5>
+									<p>Have your systems scanned for weaknesses. Identification of security flaws allows your organization to react quickly and appropriately....</p>
+									<a href="{% url 'cyber-security' %}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="col-md-4 ">
+							<div class="pv-20 ph-20 feature-box-2 boxed shadow object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+								<span class="icon without-bg"><i class="fa fa-diamond"></i></span>
+								<div class="body">
+									<h5 class="title">Cloud Computing</h5>
+									<p>By using AWS your business will benefit from massive economies of scale and in the process, you will trade capital expense for variable expense....</p>
+									<a href="{% url 'amazon-web-services' %}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="pv-20 ph-20 feature-box-2 boxed shadow object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
+								<span class="icon without-bg"><i class="fa fa-diamond"></i></span>
+								<div class="body">
+									<h5 class="title">Software Development</h5>
+									<p> We cover the full software development life cycle from business analysis to quality assurance and deployment and post-launch....</p>
+									<a href="{% url 'software-development' %}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+					<br>
+
+
+
+
+					<br>
+				</div>
+			</section>
+			<!-- section end -->
+
+
+{% endblock %}

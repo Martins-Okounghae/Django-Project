@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% load staticfiles %}
+
+
+<!-- banner start -->
+			<!-- ================ -->
+			<div class="banner dark-translucent-bg" style="background-image:url({% static 'pages/imagesP/services_3.jpg' %}); background-position: 50% 32%;">
+				<!-- breadcrumb start -->
+				<!-- ================ -->
+				<div class="breadcrumb-container">
+					<div class="container">
+						<ol class="breadcrumb">
+							<li><i class="fa fa-home pr-10"></i><a class="link-dark" href="{% url 'index' %}">Home</a></li>
+							<li class="active">Risk Assessment</li>
+						</ol>
+					</div>
+				</div>
+				<!-- breadcrumb end -->
+
+
+                <div class="container">
+					<div class="row">
+						<div class="col-md-8 text-center col-md-offset-2 pv-20">
+							<h2 class="title object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100"> <strong> </strong></h2>
+							<div class="separator object-non-visible mt-10" data-animation-effect="fadeIn" data-effect-delay="100"></div>
+							<p class="text-center object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- banner end -->
+
+                <!-- main-container start -->
+			<!-- ================ -->
+			<section class="main-container">
+
+				<div class="container">
+					<div class="row">
+
+						<!-- main start -->
+						<!-- ================ -->
+						<div class="main col-md-12">
+
+							<!-- page-title start -->
+							<!-- ================ -->
+							<h2 class="page-title margin-top-clear text-center" style="text-align: center; color: black" > Risk Assessment </h2>
+							<!-- page-title end -->
+							<div class="row">
+								<div class="col-md-12", style="font-size: medium; font-weight: 500">
+
+									<div class="separator"></div>
+
+
+									<p> Despite the focus on data protection, many small medium enterprises and organisations are still leaving their data wide open for attack by investing in wrong defences against cyber threats. Our risk assessment services will enable you classify the different cyber threats and associated risk level, so you can make an informed decision to protect your business by investing in the essential defences to mitigate these risks based on priority. </p>
+
+									<p> We understand that not everyone using our service is an information security expert. That is why we will develop a plan that will help you identify and rate the different threats, vulnerabilities and risk.  </p>
+
+								</div>
+
+							</div>
+							<hr>
+
+						</div>
+						<!-- main end -->
+
+					</div>
+				</div>
+			</section>
+			<!-- main-container end -->
+
+
+
+{% endblock %}

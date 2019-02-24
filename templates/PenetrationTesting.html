@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {% load staticfiles %}
+
+
+
+<!-- banner start -->
+			<!-- ================ -->
+			<div class="banner dark-translucent-bg" style="background-image:url({% static 'pages/imagesP/services_1.jpg' %}); background-position: 20% 52%;">
+				<!-- breadcrumb start -->
+				<!-- ================ -->
+				<div class="breadcrumb-container">
+					<div class="container">
+						<ol class="breadcrumb">
+							<li><i class="fa fa-home pr-10"></i><a class="link-dark" href="{% url 'index' %}">Home</a></li>
+							<li class="active">Penetration Testing</li>
+						</ol>
+					</div>
+				</div>
+				<!-- breadcrumb end -->
+
+
+                <div class="container">
+					<div class="row">
+						<div class="col-md-8 text-center col-md-offset-2 pv-20">
+							<h2 class="title object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100"> <strong></strong></h2>
+							<div class="" data-animation-effect="fadeIn" data-effect-delay="100"></div>
+							<p class="text-center object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100"> </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- banner end -->
+
+                <!-- main-container start -->
+			<!-- ================ -->
+			<section class="main-container">
+
+				<div class="container">
+					<div class="row">
+
+						<!-- main start -->
+						<!-- ================ -->
+						<div class="main col-md-12">
+
+							<!-- page-title start -->
+							<!-- ================ -->
+							<h2 class="page-title margin-top-clear text-center" style="text-align: center; color: black" > Penetration Testing </h2>
+							<!-- page-title end -->
+							<div class="row">
+								<div class="col-md-12", style="font-size: medium; font-weight: 500">
+
+									<div class="separator"></div>
+
+
+									<p> If your network was compromised today, would you know it?
+
+Many small medium enterprise and companies buy all the latest and greatest cyber security tools, but don't have any way to prove they work.
+First Stack Solutions offers penetration testing service that help you identify security vulnerabilities and the effectiveness of the cyber security tools you have in place in your organisation by interaction with these tools. We offer penetration testing for information systems, software, web application, wireless, mobile, operating systems, networks and human resources.
+</p>
+
+									<p>Some vulnerabilities represent a minor risk to your business while others are critical and must be addressed immediately. First Stack Solutions will help you find and attempt to exploit vulnerabilities based on the agreed rules of engagement signed before the commencement of the penetration test, so you can classify and make informed decisions to protect your business. The purpose of a penetration test is not only to uncover one off vulnerabilities, but to work with our clients and ensure they understand how to mitigate these vulnerabilities in the future. </p>
+
+
+                                    	<p> At the completion of the service, a report with the results and corrective recommendations that are risk-ranked will be provided in both executive summary and technically-detailed formats, and the appropriate action to take to remove the risk will be provided.</p>
+								</div>
+
+							</div>
+							<hr>
+
+						</div>
+						<!-- main end -->
+
+					</div>
+				</div>
+			</section>
+			<!-- main-container end -->
+
+
+
+
+
+{% endblock %}

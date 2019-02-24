@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {% load staticfiles %}
+        <!-- banner start -->
+			<!-- ================ -->
+			<div class="" style="background-image: url({% static 'pages/imagesP/services-banner3.jpg' %}); background-position: 50% 72%;">
+				<!-- breadcrumb start -->
+				<!-- ================ -->
+				<div class="breadcrumb-container">
+					<div class="container">
+						<ol class="breadcrumb">
+							<li><i class="fa fa-home pr-10"></i><a class="link-dark" href="{% url 'index' %}">Home</a></li>
+							<li class="active">Cyber Security</li>
+						</ol>
+					</div>
+				</div>
+				<!-- breadcrumb end -->
+
+
+
+
+              <div class="container">
+					<div class="row">
+						<div class="col-md-8 text-center col-md-offset-2 pv-20">
+							<h2 class="title object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100"> </h2>
+							<div class="separator object-non-visible mt-10" data-animation-effect="fadeIn" data-effect-delay="100"></div>
+							<p ></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- banner end -->
+
+
+
+        <!-- page-title start -->
+           <div class="separator"></div>
+
+							<!-- ================ -->
+							<h2 class="page-title margin-top-clear text-center" style="text-align: center; color: black" ><b> Cyber Security</b> </h2>
+
+
+                <div class="separator"></div>
+
+    	<!-- page-title end -->
+
+
+
+			<!-- main-container start -->
+			<!-- ================ -->
+			<section class="main-container padding-bottom-clear">
+
+				<div class="container">
+					<div class="row">
+
+						<!-- main start -->
+						<!-- ================ -->
+						<div class="main col-md-12">
+
+							<div class="row">
+								<div class="col-md-4 col-sm-6">
+									<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+										<span class="icon  default-bg circle"><i class="icon-check"></i></span>
+										<h3>Vulnerability Assessment</h3>
+										<div class="separator clearfix"></div>
+										<p class="text-muted">The threat landscape is evolving at escalating speed. Have your systems scanned for weaknesses...</p>
+										<a href="{% url 'vulnerability-assessment' %}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
+										<span class="icon  default-bg circle"><i class="icon-check"></i></span>
+										<h3>Penetration Testing</h3>
+										<div class="separator clearfix"></div>
+										<p class="text-muted"> Many small medium enterprise and companies buy all the latest and greatest cyber security tools... </p>
+										<a class="link-dark" href="{% url 'penetration-testing' %}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="300">
+										<span class="icon  default-bg circle"><i class="icon-check"></i></span>
+										<h3>Risk Assessment</h3>
+										<div class="separator clearfix"></div>
+										<p class="text-muted">Many small medium enterprises and organisations are still leaving their data wide open for attack... </p>
+										<a href="{% url 'risk-assessment' %}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+									</div>
+								</div>
+								<div class="clearfix visible-md"></div>
+								<div class="col-md-4 col-sm-6">
+									<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+										<span class="icon  default-bg circle"><i class="icon-check"></i></span>
+										<h3>Audit and Compliance </h3>
+										<div class="separator clearfix"></div>
+										<p class="text-muted"> Achieving compliance with industry standards doesn't have to be as difficult as it seems...</p>
+										<a class="link-dark" href="{% url 'audit-compliance' %}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
+										<span class="icon  default-bg circle"><i class="icon-check"></i></span>
+										<h3>Security Architecture</h3>
+										<div class="separator clearfix"></div>
+										<p class="text-muted">You need a security architecture that is align with your business goals and objectives...</p>
+										<a href="{% url 'security-architecture' %}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="300">
+										<span class="icon  default-bg circle"><i class="icon-check"></i></span>
+										<h3>Security Training</h3>
+										<div class="separator clearfix"></div>
+										<p class="text-muted">Humans involved in any security system can be the weakness or the strength...</p>
+										<a class="link-dark" href="{% url 'security-training' %}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- main end -->
+
+					</div>
+				</div>
+			</section>
+			<!-- main-container end -->
+
+
+
+{% endblock %}

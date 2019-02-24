@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% load staticfiles %}
+
+        <!-- banner start -->
+			<!-- ================ -->
+			<div class="banner dark-translucent-bg" style="background-image:url({% static 'pages/imagesP/desktop-application.jpg' %}); background-position: 50% 10%;">
+				<!-- breadcrumb start -->
+				<!-- ================ -->
+				<div class="breadcrumb-container">
+					<div class="container">
+						<ol class="breadcrumb">
+							<li><i class="fa fa-home pr-10"></i><a class="link-dark" href="{% url 'index' %}">Home</a></li>
+							<li class="active">Desktop Application Development</li>
+						</ol>
+					</div>
+				</div>
+				<!-- breadcrumb end -->
+
+
+                <div class="container">
+					<div class="row">
+						<div class="col-md-8 text-center col-md-offset-2 pv-20">
+							<h2 class="title object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100"></h2>
+							<div class="separator object-non-visible mt-10" data-animation-effect="fadeIn" data-effect-delay="100"></div>
+							<p class="text-center object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- banner end -->
+
+                <!-- main-container start -->
+			<!-- ================ -->
+			<section class="main-container">
+
+				<div class="container">
+					<div class="row">
+
+						<!-- main start -->
+						<!-- ================ -->
+						<div class="main col-md-12">
+
+							<!-- page-title start -->
+							<!-- ================ -->
+							<h2 class="page-title margin-top-clear text-center" style="text-align: center; color: black" >Desktop Application Development</h2>
+							<!-- page-title end -->
+							<div class="row">
+								<div class="col-md-12" style="font-size: medium; font-weight: 500">
+
+									<div class="separator"></div>
+
+
+									<p>Full Service Application Development and Deployment from idea to product. Starting from an initial meeting; to a complete Scope, development, implementation and ongoing maintenance. With an experienced Software and Systems Engineering team, First Stack Software Solutions can assist your organization to develop, integrate, manage, and maintain your software and systems environment.</p>
+
+
+									<p>We design, engineer and build applications to solve simple or complicated business needs.</p>
+
+								</div>
+
+							</div>
+							<hr>
+
+						</div>
+						<!-- main end -->
+
+					</div>
+				</div>
+			</section>
+			<!-- main-container end -->
+
+
+
+
+
+
+
+{% endblock %}

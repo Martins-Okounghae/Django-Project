@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<!-- banner start -->
+			<!-- ================ -->
+			<div class="banner">
+				<!-- google maps start -->
+				<div id="map-canvas"></div>
+				<!-- google maps end -->
+			</div>
+			<!-- banner end -->
+
+			<!-- page-intro start-->
+			<!-- ================ -->
+			<div class="page-intro">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<ol class="breadcrumb">
+								<li><i class="fa fa-home pr-10"></i><a href="{% url 'index' %}">Home</a></li>
+								<li class="active">Contact Us</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- page-intro end -->
+
+
+			 <!-- main-container start -->
+			<!-- ================ -->
+			<section class="main-container">
+
+				<div class="container">
+					<div class="row">
+
+						<!-- main start -->
+						<!-- ================ -->
+						<div class="main col-md-8" style="font-size: medium; font-weight: 500">
+
+							<!-- page-title start -->
+							<!-- ================ -->
+							<h2 class="page-title" style="text-align: left; color: black" >Contact Us</h2>
+							<!-- page-title end -->
+
+							<p>If you have a project idea - be it a detailed requirements specification, a functional description or even a higher-level vision of a future software or system - share it with us. We will allocate our relevant expert to process your request.</p>
+
+							<div class="alert alert-success hidden" id="MessageSent">
+								We have received your message, we will contact you very soon.
+							</div>
+
+							<div class="alert alert-danger hidden" id="MessageNotSent">
+								Oops! Something went wrong please refresh the page and try again.
+
+							</div>
+
+							<div class="contact-form">
+								<form role="form" method="post" action = ""> {% csrf_token %}
+									<div class="form-group ">
+										<label for="name" style="text-align: left; color: #0094ff" >Name<span style="color:red">* </span></label>
+										<input type="text" class="form-control"  name="name" placeholder="" required="required">
+										<i class="fa fa-user form-control-feedback"></i>
+									</div>
+									<div class="form-group ">
+										<label for="email" style="text-align: left; color: #0094ff" >Email<span style="color:red">* </span></label>
+
+										<input type="email" class="form-control" name="from_email" placeholder="" required ="required" >
+
+										<i class="fa fa-envelope form-control-feedback"></i>
+									</div>
+									<div class="form-group ">
+										<label for="subject" style="text-align: left; color: #0094ff" >Subject<span style="color:red">* </span></label>
+										<input type="text" class="form-control"  name="subject" placeholder="" required="required">
+										<i class="fa fa-navicon form-control-feedback"></i>
+									</div>
+									<div class="form-group">
+										<label for="message" style="text-align: left; color: #0094ff" >Message<span style="color:red">* </span></label>
+										<textarea class="form-control" rows="6"  name="message" placeholder="" required="required" ></textarea>
+										<i class="fa fa-pencil form-control-feedback"></i>
+									</div>
+									<div style="clear:both"></div>
+									<input type="submit" name="submit" value="Submit"class="btn radius btn-info">
+
+								</form>
+							</div>
+						</div>
+						<!-- main end -->
+
+
+
+
+
+
+
+						<!-- sidebar start -->
+						<aside class="col-md-4">
+							<div class="sidebar">
+								<div class="side vertical-divider-left">
+									<h3 class="title" style="text-align: left; color: #0094ff" >Firststack Solutions</h3>
+									<ul class="list">
+										<li><strong></strong></li>
+										<li><i class="fa fa-home pr-10"></i>Virginia Road, Ballyjamesduff,<br><span class="pl-20"> Co.Cavan, Rep Of Ireland</span></li>
+										<li><i class="fa fa-phone pr-10"></i><abbr title="Phone">P:</abbr> (00353) 831958885</li>
+										<li><i class="fa fa-mobile pr-10 pl-5"></i><abbr title="Phone">M:</abbr> (00353) 831958885</li>
+										<li><i class="fa fa-envelope pr-10"></i><a href="mailto:info@firststacksolutions.com">info@firststacksolutions.com</a></li>
+									</ul>
+
+									    <div class="headline"><h3 style="text-align: left; color: #0094ff">Business Hours</h3></div>
+											<ul class="list-unstyled margin-bottom-30">
+											<li><strong>Monday-Friday:</strong> 10am to 6pm</li>
+											<li><strong>Saturday:</strong> 11am to 3pm</li>
+											<li><strong>Sunday:</strong> Closed</li>
+										</ul>
+
+
+
+
+
+
+									<ul class="social-links circle">
+
+									<li class="twitter"><a target="_blank" href="https://twitter.com/FirstStackSol"><i class="fa fa-twitter"></i></a></li>
+
+									<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
+
+									<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/10490167?trk=prof-exp-company-name"><i class="fa fa-linkedin"></i></a></li>
+
+									<li class="googleplus"><a target="_blank" href="https://plus.google.com/u/0/111551157685285466943"><i class="fa fa-google-plus"></i></a></li>
+
+									<li class="instagram"><a target="_blank" href="https://www.instagram.com/firststack.solutions/"><i class="fa fa-instagram"></i></a></li>
+
+
+
+									<li class="facebook"><a target="_blank" href="https://www.facebook.com/First-Stack-Software-Solutions-1742075126021034/"><i class="fa fa-facebook"></i></a></li>
+
+
+									</ul>
+								</div>
+							</div>
+						</aside>
+						<!-- sidebar end -->
+
+					</div>
+				</div>
+			</section>
+			<!-- main-container end -->
+
+{% endblock %}
