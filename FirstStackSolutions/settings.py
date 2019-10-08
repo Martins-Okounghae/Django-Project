@@ -123,6 +123,7 @@ STATIC_URL = '/static/pages/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 
+
 # Email Configuration
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = ''
